@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IPTV Web Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📺 IPTV Web Player</h1>
+
+  <input type="text" id="streamUrl" placeholder="Enter .m3u8 stream URL" />
+  <button onclick="playStream()">▶ Play</button>
+
+  <div id="playerContainer">
+    <video id="video" controls autoplay></video>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
